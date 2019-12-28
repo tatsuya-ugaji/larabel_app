@@ -25,8 +25,8 @@
                     <option selected value="1">支出</option>
                     @endif
                 @else
-                <option value="0">収入</option>
-                <option value="1">支出</option>
+                <option value="0" @if(old('bp_flg')=='0') selected  @endif>収入</option>
+                <option value="1" @if(old('bp_flg')=='1') selected  @endif>支出</option>
                 @endif
             </select>
         </div>

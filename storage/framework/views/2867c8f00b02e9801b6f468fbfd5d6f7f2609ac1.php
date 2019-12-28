@@ -42,8 +42,8 @@ unset($__errorArgs, $__bag); ?>
                     <option selected value="1">支出</option>
                     <?php endif; ?>
                 <?php else: ?>
-                <option value="0">収入</option>
-                <option value="1">支出</option>
+                <option value="0" <?php if(old('bp_flg')=='0'): ?> selected  <?php endif; ?>>収入</option>
+                <option value="1" <?php if(old('bp_flg')=='1'): ?> selected  <?php endif; ?>>支出</option>
                 <?php endif; ?>
             </select>
         </div>
