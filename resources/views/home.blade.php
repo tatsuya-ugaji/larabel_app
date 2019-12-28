@@ -14,7 +14,7 @@
                         <h3>{{ $date->year }}年{{ $date->month }}月</h3>
                     </div>
                     <div class="col-4  text-right">
-                        <a href="/actual/register" class="btn">入力する</a>
+                        <a href="/actual/register" class="btn btn-pink">入力する</a>
                     </div>
                 </div>
                 <div class="col-12 text-center">

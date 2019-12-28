@@ -1,7 +1,13 @@
 <table class="table table-bordered">
     <thead>
         <tr class="text-center">
-            <th>日付</th><th>カテゴリ</th><th>金額</th><th>備考</th>
+            <th>日付</th>
+            <th>カテゴリ</th>
+            <th>金額</th>
+            <?php if($detect->isMobile() || $detect->isTablet()): ?>
+            <?php else: ?>
+            <th>備考</th>
+            <?php endif; ?>
         </tr>
     </thead>
     <tbody>
@@ -28,7 +34,10 @@
                 <?php echo e(number_format($item->amount)); ?>
 
             </td>
+            <?php if($detect->isMobile() || $detect->isTablet()): ?>
+            <?php else: ?>
             <td><?php echo e($item->remarks); ?></td>
+            <?php endif; ?>
         </tr>
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
     </tbody>
