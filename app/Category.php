@@ -18,8 +18,8 @@ class Category extends Model
     public static function categorySave($user_id)
     {
         $params = array('給料','家賃','水道光熱費','通信費','食費',
-                        '日用品','交際費','趣味','衣服','美容',
-                        '医療費','その他');
+                        '日用品','交際費','趣味','衣服','交通費',
+                        '美容','医療費','その他');
 
         foreach ($params as $param) {
             $category = new Category;
