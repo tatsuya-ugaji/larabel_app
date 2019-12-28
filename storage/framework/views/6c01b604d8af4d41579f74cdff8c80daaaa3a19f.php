@@ -30,7 +30,7 @@
                     <tr>
                         <th class="text-center">支  出</th>
                         <?php for($i = 1;$i <= 12;$i++): ?>
-                        <td class="text-right"><?php echo e(number_format($expenses[$i])); ?></th>
+                        <td class="text-right"><small>▲</small><?php echo e(number_format($expenses[$i])); ?></th>
                         <?php endfor; ?>
                     </tr>
                     <tr>

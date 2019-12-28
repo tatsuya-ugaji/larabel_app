@@ -22,7 +22,7 @@
             <td class="text-center">{{ $item->category }}</td>
             <td class="text-right">
                 @if($item->bp_flg == 1)
-                    ▲
+                    <small>▲</small>
                 @endif
                 {{ number_format($item->amount) }}
             </td>

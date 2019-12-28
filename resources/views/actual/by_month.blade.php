@@ -26,13 +26,13 @@
                         <td class="text-center">{{ $item[0] }}</td>
                         <td class="text-right">
                             @if($item[4] == 1)
-                                ▲
+                                <small>▲</small>
                             @endif
                             {{ number_format($item[1]) }}
                         </td>
                         <td class="text-right">
                             @if($item[4] == 1)
-                                ▲
+                                <small>▲</small>
                             @endif
                             {{ number_format($item[2]) }}
                         </td>

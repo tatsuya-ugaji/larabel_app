@@ -23,7 +23,7 @@
             <td class="text-center"><?php echo e($item->category); ?></td>
             <td class="text-right">
                 <?php if($item->bp_flg == 1): ?>
-                    ▲
+                    <small>▲</small>
                 <?php endif; ?>
                 <?php echo e(number_format($item->amount)); ?>
 

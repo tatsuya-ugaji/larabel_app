@@ -32,7 +32,7 @@
                     <tr>
                         <th class="text-center">支  出</th>
                         @for($i = 1;$i <= 12;$i++)
-                        <td class="text-right">{{ number_format($expenses[$i]) }}</th>
+                        <td class="text-right"><small>▲</small>{{ number_format($expenses[$i]) }}</th>
                         @endfor
                     </tr>
                     <tr>
